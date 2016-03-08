@@ -12,6 +12,8 @@
 		E68A29C31C8EAA9D00808F3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68A29C11C8EAA9D00808F3F /* Main.storyboard */; };
 		E68A29C51C8EAA9D00808F3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E68A29C41C8EAA9D00808F3F /* Assets.xcassets */; };
 		E68A29C81C8EAA9D00808F3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68A29C61C8EAA9D00808F3F /* LaunchScreen.storyboard */; };
+		E68A29D01C8EBDBA00808F3F /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E68A29CF1C8EBDBA00808F3F /* Minecraft.ttf */; };
+		E68A29D21C8EC90600808F3F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68A29D11C8EC90600808F3F /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		E68A29C41C8EAA9D00808F3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E68A29C71C8EAA9D00808F3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E68A29C91C8EAA9D00808F3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E68A29CF1C8EBDBA00808F3F /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		E68A29D11C8EC90600808F3F /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +58,14 @@
 		E68A29BC1C8EAA9D00808F3F /* OOP-battle */ = {
 			isa = PBXGroup;
 			children = (
+				E68A29CF1C8EBDBA00808F3F /* Minecraft.ttf */,
 				E68A29BD1C8EAA9D00808F3F /* AppDelegate.swift */,
 				E68A29BF1C8EAA9D00808F3F /* ViewController.swift */,
 				E68A29C11C8EAA9D00808F3F /* Main.storyboard */,
 				E68A29C41C8EAA9D00808F3F /* Assets.xcassets */,
 				E68A29C61C8EAA9D00808F3F /* LaunchScreen.storyboard */,
 				E68A29C91C8EAA9D00808F3F /* Info.plist */,
+				E68A29D11C8EC90600808F3F /* Player.swift */,
 			);
 			path = "OOP-battle";
 			sourceTree = "<group>";
@@ -124,6 +130,7 @@
 			files = (
 				E68A29C81C8EAA9D00808F3F /* LaunchScreen.storyboard in Resources */,
 				E68A29C51C8EAA9D00808F3F /* Assets.xcassets in Resources */,
+				E68A29D01C8EBDBA00808F3F /* Minecraft.ttf in Resources */,
 				E68A29C31C8EAA9D00808F3F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E68A29C01C8EAA9D00808F3F /* ViewController.swift in Sources */,
+				E68A29D21C8EC90600808F3F /* Player.swift in Sources */,
 				E68A29BE1C8EAA9D00808F3F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
