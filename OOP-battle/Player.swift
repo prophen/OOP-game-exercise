@@ -12,6 +12,7 @@ class Player {
     private var _hp: Int = 100
     private var _attackPwr: Int = 10
     private var _name: String = ""
+    private var _player: Int = 0
     
     var attackPwr: Int {
         get {
@@ -31,6 +32,12 @@ class Player {
         }
     }
     
+    var player: Int {
+        get {
+            return _player
+        }
+    }
+    
     var isAlive: Bool {
         get {
             if hp <= 0 {
@@ -41,15 +48,15 @@ class Player {
         }
     }
     
-    init(name: String, startingHp: Int, attackPwr: Int) {
+    init(name: String, startingHp: Int, attackPwr: Int, player: Int) {
         self._name = name
         self._hp = startingHp
         self._attackPwr = attackPwr
+        self._player = player
     }
     
-    func attemptAttack(attackPwr: Int) -> Bool {
-        let randomNum = Int(arc4random_uniform(25))
+    func takeAttackDmg(attackPwr: Int) {
+        let randomNum = Int(arc4random_uniform(10))
         self._hp -= attackPwr + randomNum
-        return true
     }
 }
