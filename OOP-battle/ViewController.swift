@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         
     }
 
-    @IBAction func playerAttack(sender: AnyObject) {
+    @IBAction func onAttackBtnPressed(sender: AnyObject) {
         if sender.tag == 1 {
             attack(1)
         } else {
@@ -53,9 +53,7 @@ class ViewController: UIViewController {
         if player == 1 {
             game.attackSound(player)
             player2.takeAttackDmg(player1.attackPwr)
-            
             player2HP.text = "\(player2.hp) HP"
-            
             UpdateLbl.text = "\(player1.name) attacked!"
             player2AttackBtn.enabled = false
             NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "enableAttackBtn", userInfo:nil, repeats: false)
@@ -63,7 +61,6 @@ class ViewController: UIViewController {
             game.attackSound(player)
             player1.takeAttackDmg(player2.attackPwr)
             player1HP.text = "\(player1.hp) HP"
-        
             UpdateLbl.text = "\(player2.name) attacked!"
             player1AttackBtn.enabled = false
             NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "enableAttackBtn", userInfo: nil, repeats: false)
