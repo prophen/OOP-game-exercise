@@ -72,7 +72,11 @@ class GameController {
         }
     }
     
-
+    func gameOver(){
+        bgMusic.stop()
+        
+        
+    }
         
 
     }

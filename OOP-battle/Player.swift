@@ -56,7 +56,10 @@ class Player {
     }
     
     func takeAttackDmg(attackPwr: Int) {
-        let randomNum = Int(arc4random_uniform(10))
-        self._hp -= attackPwr + randomNum
+            let randomNum = Int(arc4random_uniform(10))
+            self._hp -= attackPwr + randomNum
+        
     }
+    
+
 }

@@ -9,6 +9,7 @@
         <mutableArray key="Minecraft.ttf">
             <string>Minecraft</string>
             <string>Minecraft</string>
+            <string>Minecraft</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -94,7 +95,7 @@
                                             <constraint firstAttribute="width" secondItem="pjU-gn-DvJ" secondAttribute="height" multiplier="106:39" id="4uN-JC-2Sm"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="18"/>
-                                        <state key="normal" title="ATTACK" backgroundImage="player1attackbtn"/>
+                                        <state key="normal" title="ATTACK" backgroundImage="player2attackbtn"/>
                                         <connections>
                                             <action selector="onAttackBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DoO-9X-uqF"/>
                                         </connections>
@@ -106,11 +107,22 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZH-Oa-DgE">
+                                <rect key="frame" x="194" y="261" width="212" height="78"/>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="25"/>
+                                <state key="normal" title="RESTART" backgroundImage="player1attackbtn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onRestartPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lOp-I1-JUa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="zNJ-5z-ea3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Ci-K4-erA"/>
                             <constraint firstItem="Odq-4x-GUf" firstAttribute="centerX" secondItem="8UR-vY-Z7O" secondAttribute="centerX" id="2bj-RR-77Z"/>
+                            <constraint firstItem="iZH-Oa-DgE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="67b-by-3ZS"/>
                             <constraint firstItem="5i3-BM-ZGx" firstAttribute="centerY" secondItem="Cda-qb-Za3" secondAttribute="centerY" id="8s6-vT-afa"/>
                             <constraint firstItem="5i3-BM-ZGx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DQi-by-n8f"/>
                             <constraint firstAttribute="trailing" secondItem="5i3-BM-ZGx" secondAttribute="trailing" constant="10" id="FWr-9r-WLg"/>
@@ -125,6 +137,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ggK-Vy-iTv" secondAttribute="bottom" id="bNT-5D-YtO"/>
                             <constraint firstItem="tZB-Cg-gZZ" firstAttribute="centerX" secondItem="zNJ-5z-ea3" secondAttribute="centerX" id="cQv-U7-oRo"/>
                             <constraint firstItem="ggK-Vy-iTv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dGX-YE-Dno"/>
+                            <constraint firstItem="iZH-Oa-DgE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dxB-m0-IDX"/>
                             <constraint firstItem="tZB-Cg-gZZ" firstAttribute="centerY" secondItem="zNJ-5z-ea3" secondAttribute="centerY" id="eJb-eM-egh"/>
                             <constraint firstItem="Cda-qb-Za3" firstAttribute="top" secondItem="87w-dP-Cio" secondAttribute="bottom" constant="8" id="h6L-OC-KvF"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zNJ-5z-ea3" secondAttribute="bottom" constant="8" id="k15-az-Xcm"/>
@@ -142,6 +155,7 @@
                         <outlet property="player2AttackBtn" destination="pjU-gn-DvJ" id="zFP-KJ-AuI"/>
                         <outlet property="player2HP" destination="Odq-4x-GUf" id="8zh-qy-Od3"/>
                         <outlet property="player2Img" destination="8UR-vY-Z7O" id="66c-Hh-IrS"/>
+                        <outlet property="restartBtn" destination="iZH-Oa-DgE" id="rBg-eU-DaN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
